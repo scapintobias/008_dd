@@ -30,7 +30,7 @@ export default function Logos() {
 					{
 						resolve: autoplayPlugin,
 						options: {
-							interval: 4000,
+							interval: 3000,
 						},
 					},
 

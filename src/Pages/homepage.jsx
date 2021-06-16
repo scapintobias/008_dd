@@ -1,16 +1,23 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { ContactLink } from '../components/contactlink';
+import Homegrid from '../components/homegrid';
 
 export const Homepage = () => (
-	<>
-		<div className='flex flex-col items-center justify-center px-4 font-sans font-bold lg:text-5xl t:text-3xl md:text-4xl sm:text-xl text-ruby-400 h-home'>
-			<div className='font-light'>
-				<p>Design for every dimension.</p>
-				<p>Design for brands.</p>
-				<p>Design for screens.</p>
-				<p>Design for User Experience.</p>
-				<p>Design for durability.</p>
-				<p>Design for All.</p>
-			</div>
+	<section className='max-w-screen-xl px-2 pt-20 mx-auto xl:px-0'>
+		<div className='pb-32 space-y-2 font-extralight sm:text-2xl t:text-4xl md:text-5xl l:text-6xl text-ruby-400'>
+			<p>We help companies</p>
+			<p> and businesses grow</p>
+			<p> by designing things</p>
+			<p>since 2008.</p>
 		</div>
-	</>
+		<NavLink
+			to='/about'
+			className='px-4 py-3 uppercase rounded-full sm:text-sm md:text-base l:text-2xl bg-charcoal-50 font-extralight hover:bg-ruby-400 hover:text-white'
+		>
+			About us
+		</NavLink>
+		<Homegrid />
+		<ContactLink />
+	</section>
 );

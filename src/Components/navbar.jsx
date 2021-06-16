@@ -7,16 +7,16 @@ function Nav() {
 
 	return (
 		<div className='z-50 w-screen'>
-			<nav className='sm:px-1.5 xl:px-0 pt-2 pb-1.5'>
+			<nav className='sm:px-1.5 sm:pt-0.5 xl:px-0 md:pt-2 pb-1.5'>
 				<div className='mx-auto max-w-7xl'>
 					<div className='flex justify-between h-8'>
 						<div className='flex items-end justify-between md:min-w-full'>
 							<NavLink className='flex-shrink-0' to='/'>
-								<span className='font-black tracking-tighter text-ruby-400 t:text-4xl sm:text-2xl hover:text-charcoal-800'>
+								<span className='font-black tracking-tighter text-ruby-400 md:text-4xl sm:text-2xl hover:text-charcoal-800'>
 									DisciplineDesign
 								</span>
 							</NavLink>
-							<div className='flex items-baseline justify-between pb-1.5 space-x-8 sm:hidden md:block'>
+							<div className='flex items-baseline justify-between pb-1.5 space-x-8 sm:hidden md:block pr-1'>
 								<NavLink
 									to='/work'
 									className='font-light uppercase text-ruby-400 hover:text-charcoal-800'
