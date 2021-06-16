@@ -6,7 +6,7 @@ const Study = (props) => {
 		<>
 			<NavLink key={props.type} to={'/work/study/' + props.to}>
 				<div className=' hover:text-ruby-400'>
-					<div className='relative sm:h-80 t:h-96'>
+					<div className='relative sm:h-80 md:h-96'>
 						<img
 							src={props.img}
 							alt='proj'
@@ -14,9 +14,13 @@ const Study = (props) => {
 						/>
 					</div>
 					<div className='sm:px-4 xl:px-0'>
-						<p className='pt-3 text-sm font-normal uppercase'>{props.type}</p>
-						<p className='py-1 text-4xl font-light'>{props.title}</p>
-						<p className='text-base font-extralight '>{props.subtitle}</p>
+						<p className='pt-3 text-xs uppercase font-extralight'>
+							{props.type}
+						</p>
+						<p className='font-light sm:text-xl t:text-3xl'>{props.title}</p>
+						<p className='sm:text-sm t:text-lg font-extralight'>
+							{props.subtitle}
+						</p>
 					</div>
 				</div>
 			</NavLink>
@@ -27,11 +31,13 @@ const Study = (props) => {
 export const CaseStudies = () => {
 	return (
 		<div className='flex flex-col py-32 mx-auto max-w-7xl'>
-			<div className='px-4 pb-8 '>
-				<p className='text-3xl font-light'>Case Studies</p>
-				<p className='text-lg font-extralight'>selected projects</p>
+			<div className='pb-16 sm:px-4 xl:px-0'>
+				<p className='font-medium sm:text-xl t:text-3xl'>Case Studies</p>
+				<p className='sm:text-sm t:text-lg font-extralight'>
+					Selected projects
+				</p>
 			</div>
-			<div className='grid pb-32 md:grid-cols-2 sm:grid-cols-1 gap-y-3'>
+			<div className='grid l:grid-cols-2 sm:grid-cols-1 gap-y-3'>
 				<Study
 					img='/img/lidar.jpg'
 					to='yape'
@@ -44,7 +50,7 @@ export const CaseStudies = () => {
 					to='lima'
 					type='Waifinding'
 					title='Metro de Lima'
-					subtitle='subway'
+					subtitle='Subway'
 				/>
 				<Study
 					img='/cat/borromeo/borromeo.jpg'

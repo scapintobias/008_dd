@@ -4,46 +4,42 @@ import { NavLink } from 'react-router-dom';
 
 function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
+
 	return (
-		<div className='z-50 w-screen p-2 -top-20'>
-			<nav>
+		<div className='z-50 w-screen'>
+			<nav className='sm:px-1.5 xl:px-0 pt-2 pb-1.5'>
 				<div className='mx-auto max-w-7xl'>
-					<div className='flex items-center justify-between h-8'>
-						<div className='flex items-center justify-between md:min-w-full'>
+					<div className='flex justify-between h-8'>
+						<div className='flex items-end justify-between md:min-w-full'>
 							<NavLink className='flex-shrink-0' to='/'>
-								<span className='font-black tracking-tighter text-ruby-400 t:text-4xl sm:text-2xl'>
+								<span className='font-black tracking-tighter text-ruby-400 t:text-4xl sm:text-2xl hover:text-charcoal-800'>
 									DisciplineDesign
 								</span>
 							</NavLink>
-							<div className='hidden md:block '>
-								<div className='flex items-baseline justify-between ml-10 space-x-3'>
-									<NavLink
-										to='/work'
-										className='px-3 py-2 font-medium leading-none tracking-wide uppercase text-ruby-400 hover:text-charcoal-800 '
-									>
-										Work
-									</NavLink>
+							<div className='flex items-baseline justify-between pb-1.5 space-x-8 sm:hidden md:block'>
+								<NavLink
+									to='/work'
+									className='font-light uppercase text-ruby-400 hover:text-charcoal-800'
+									activeClassName='text-gray-600'
+								>
+									Work
+								</NavLink>
 
-									{/* <NavLink
-										to='/resources'
-										className='px-3 py-2 font-medium leading-none tracking-wide uppercase text-ruby-400 hover:text-charcoal-800'
-									>
-										Resources
-									</NavLink> */}
-									<NavLink
-										to='/about'
-										className='px-3 py-2 font-medium leading-none tracking-wide uppercase text-ruby-400 hover:text-charcoal-800'
-									>
-										About
-									</NavLink>
+								<NavLink
+									to='/about'
+									className='font-light uppercase text-ruby-400 hover:text-charcoal-800'
+									activeClassName='text-gray-600'
+								>
+									About
+								</NavLink>
 
-									<NavLink
-										to='/contacts'
-										className='px-3 py-2 font-medium leading-none tracking-wide uppercase text-ruby-400 hover:text-charcoal-800'
-									>
-										Contacts
-									</NavLink>
-								</div>
+								<NavLink
+									to='/contacts'
+									className='font-light uppercase text-ruby-400 hover:text-charcoal-800'
+									activeClassName='text-gray-600'
+								>
+									Contacts
+								</NavLink>
 							</div>
 						</div>
 						<div className='flex -mr-2 md:hidden'>
@@ -93,55 +89,40 @@ function Nav() {
 					</div>
 				</div>
 
-				<Transition
-					show={isOpen}
-					enter='transition ease-out duration-100 transform'
-					enterFrom='opacity-0 scale-95'
-					enterTo='opacity-100 scale-100'
-					leave='transition ease-in duration-75 transform'
-					leaveFrom='opacity-100 scale-100'
-					leaveTo='opacity-0 scale-95'
-				>
-					{(ref) => (
-						<div
-							className='absolute right-0 w-full bg-white md:hidden '
-							id='mobile-menu'
-						>
-							<div ref={ref} className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-								<NavLink
-									to='/work'
-									className='block w-full px-4 py-4 text-lg font-medium text-right rounded-full text-ruby-400 hover:bg-white hover:text-black'
-									onClick={() => setIsOpen(!isOpen)}
-								>
-									Work
-								</NavLink>
+				<Transition show={isOpen}>
+					<div
+						className='absolute right-0 w-full bg-white top-12 md:hidden '
+						id='mobile-menu'
+					>
+						<div className='pt-4 pb-3 mt-2 space-y-1 sm:px-3'>
+							<NavLink
+								to='/work'
+								className='block w-full px-4 text-lg font-light text-right uppercase rounded-full text-ruby-400 hover:bg-white hover:text-black'
+								onClick={() => setIsOpen(!isOpen)}
+								activeClassName='text-gray-600'
+							>
+								Work
+							</NavLink>
 
-								{/* <NavLink
-									to='/resources'
-									className='block w-full px-4 py-4 text-lg font-medium text-right rounded-full text-ruby-400 hover:bg-white hover:text-black'
-									onClick={() => setIsOpen(!isOpen)}
-								>
-									Resources
-								</NavLink> */}
+							<NavLink
+								to='/about'
+								className='block w-full px-4 text-lg font-light text-right uppercase rounded-full text-ruby-400 hover:bg-white hover:text-black'
+								onClick={() => setIsOpen(!isOpen)}
+								activeClassName='text-gray-600'
+							>
+								About
+							</NavLink>
 
-								<NavLink
-									to='/about'
-									className='block w-full px-4 py-4 text-lg font-medium text-right rounded-full text-ruby-400 hover:bg-white hover:text-black'
-									onClick={() => setIsOpen(!isOpen)}
-								>
-									About
-								</NavLink>
-
-								<NavLink
-									to='/contacts'
-									className='block w-full px-4 py-4 text-lg font-medium text-right rounded-full text-ruby-400 hover:bg-white hover:text-black'
-									onClick={() => setIsOpen(!isOpen)}
-								>
-									Contacts
-								</NavLink>
-							</div>
+							<NavLink
+								to='/contacts'
+								className='block w-full px-4 text-lg font-light text-right uppercase rounded-full text-ruby-400 hover:bg-white hover:text-black'
+								onClick={() => setIsOpen(!isOpen)}
+								activeClassName='text-gray-600'
+							>
+								Contacts
+							</NavLink>
 						</div>
-					)}
+					</div>
 				</Transition>
 			</nav>
 		</div>

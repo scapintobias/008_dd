@@ -34,7 +34,10 @@ body {
 		height: calc(100vh - 6.5rem);
 	}
 	.h-study {
-		height: calc(100vh - 4rem);
+		height: calc(100vh - 57.5px);
+	}
+	.h-slider {
+		height: calc(100vh - 8rem);
 	}
 	.col-1 {
 		column-count: 1;

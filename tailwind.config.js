@@ -68,7 +68,7 @@ module.exports = {
 			'lg': '1200px',
 			// => @media (min-width: 1024px) { ... }
 
-			'xl': '1600px',
+			'xl': '1601px',
 			// => @media (min-width: 1280px) { ... }
 
 			'2xl': '2560px',
@@ -79,14 +79,11 @@ module.exports = {
 			serif: ['Charter', 'normal'],
 		},
 		fontSize: {
-			'par': ['21px', '32px'],
-			'titlesec': ['46px', '56px'],
-			'subsec': ['22px', '28px'],
-			'xs': ['0.75rem', '1rem'],
+			'xs': ['0.75rem', '0.85rem'],
 			'sm': ['0.875rem', '1.25rem'],
 			'base': ['1rem', '1.5rem'],
 			'lg': ['1.125rem', '1.75rem'],
-			'xl': ['1.25rem', '1.75rem'],
+			'xl': ['21px', '32px'],
 			'2xl': ['1.5rem', '2rem'],
 			'3xl': ['1.875rem', '2.25rem'],
 			'4xl': ['2.25rem', '2.5rem'],

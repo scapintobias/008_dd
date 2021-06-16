@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import { useRouter } from './Hooks/hooks';
+import Navbar from './components/navbar';
+import { Homepage, Work, About } from './Pages';
+import { Borromeo, Lima, Yape, YapeSrl } from './cases';
 
-import Navbar from './Components/navbar';
-import { Homepage, Project, Work, About } from './Pages';
-import { Borromeo, Lima, Yape, YapeSrl } from './Projects/content';
-import { Redesign } from './Projects/redesign';
+import Logos from './components/logos';
+import { __RouterContext } from 'react-router';
+export function useRouter() {
+	return useContext(__RouterContext);
+}
 
 function ScrollToTop({ children }) {
 	const {
@@ -25,15 +28,12 @@ function PageContent() {
 		<Switch>
 			<Route path='/' exact component={Homepage} />
 			<Route path='/about' exact component={About} />
-			<Route path='/redesign' exact component={Redesign} />
 			<Route path='/work' exact component={Work} />
-			<Route path='/work/:type' exact component={Work} />
-			<Route path='/work/:type/:year/:slug' component={Project} />
+			<Route path='/work/logos' exact component={Logos} />
 			<Route path='/work/study/yape' component={Yape} />
 			<Route path='/work/study/yape-srl' component={YapeSrl} />
 			<Route path='/work/study/lima' component={Lima} />
 			<Route path='/work/study/borromeo5' component={Borromeo} />
-			{/* <Route path='/resources' exact component={Resources} /> */}
 		</Switch>
 	);
 }
