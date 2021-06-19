@@ -1,32 +1,35 @@
 import React from 'react';
-
+import Slider from '../components/slider';
 import { Par, StudiesGrid, Study } from './components';
 
 export function Lima() {
 	return (
-		<>
-			<div className='absolute w-full origin-left transform rotate-90 translate-x-full right-4'>
-				This project was developed in close collaboration with:{' '}
-				<a
-					href='http://www.aetherotopies.com/'
-					target='_blank'
-					rel='noopener noreferrer'
-					className='hover:text-ruby-400'
-				>
-					Samuel Iuri
-				</a>
-			</div>
-			<div className='flex items-center justify-center w-screen h-study'>
-				<div className='absolute w-full text-charcoal-500 bottom-6'>
-					<div className='max-w-3xl sm:mx-4 md:mx-auto'>
-						<p className='pb-4 text-5xl font-light'>Metro de Lima</p>
-						<p className='text-4xl font-extralight'>
-							New identity and wayfinding
-						</p>
-					</div>
+		<section className='max-w-screen-xl mx-auto'>
+			<section className='flex flex-col justify-between pb-2 h-main'>
+				<div className='sm:px-2 xl:px-0 md:text-base sm:text-xs'>
+					Collaborator:{' '}
+					<a
+						href='http://www.aetherotopies.com/'
+						target='_blank'
+						rel='noopener noreferrer'
+						className='hover:text-ruby-400'
+					>
+						Samuel Iuri
+					</a>
 				</div>
-				<img src='/cat/lima/limalogo.png' alt='limalogo' className='w-2/3' />
-			</div>
+				<img
+					src='/cases/lima/limalogo.png'
+					alt='limalogo'
+					className='sm:px-2 xl:px-0 '
+				/>
+
+				<div className='sm:px-2 xl:px-0 text-charcoal-500'>
+					<p className='font-light sm:text-3xl md:text-5xl'>Metro de Lima</p>
+					<p className='place-self-start md:text-4xl sm:text-base font-extralight'>
+						New identity and wayfinding
+					</p>
+				</div>
+			</section>
 
 			<Par>
 				<p className='pb-5'>
@@ -54,25 +57,18 @@ export function Lima() {
 					and exits)
 				</p>
 			</Par>
-
-			<img src='/cat/lima/4.png' alt='Mezzanine' className='w-full my-6' />
-			<img src='/cat/lima/1.png' alt='Mezzanine' className='w-full my-6' />
-			<img src='/cat/lima/2.png' alt='Mezzanine' className='w-full my-6' />
-			<img src='/cat/lima/3.png' alt='Mezzanine' className='w-full my-6' />
-
-			<div className='inline-block whitespace-nowrap'>
-				<img
-					src='/cat/lima/ortorenderstazione.jpg'
-					alt='section'
-					className='object-cover object-left h-96'
-				/>
-			</div>
-
+			<Slider>
+				<img src='/cases/lima/4.png' alt='Mezzanine' />
+				<img src='/cases/lima/1.png' alt='Mezzanine' />
+				<img src='/cases/lima/2.png' alt='Mezzanine' />
+				<img src='/cases/lima/3.png' alt='Mezzanine' />
+			</Slider>
 			<img
-				src='/cat/lima/map.png'
-				alt='map'
-				className='mt-12 md:mx-auto sm:w-full md:w-9/12'
+				src='/cases/lima/ortorenderstazione.jpg'
+				alt='section'
+				className='object-cover object-left pt-10 h-96'
 			/>
+			<img src='/cases/lima/map.png' alt='map' className='mt-12 ' />
 			<Par>
 				<h2>Map</h2>
 				<p>
@@ -93,19 +89,23 @@ export function Lima() {
 					once a journey is underway.
 				</p>
 			</Par>
-			<img src='/cat/lima/5.png' alt='Map' className='w-full pb-6' />
-			<img src='/cat/lima/lima_binder.png' alt='Map' className='w-full pb-12' />
+			<img src='/cases/lima/5.png' alt='Map' className='w-full pb-6' />
+			<img
+				src='/cases/lima/lima_binder.png'
+				alt='Map'
+				className='w-full pb-12'
+			/>
 
 			<StudiesGrid>
 				<Study
-					img='/img/lidar.jpg'
-					to='yape'
-					type='UX/UI'
-					title='Yape'
-					subtitle='e-Novia'
+					img='https://upload.wikimedia.org/wikipedia/commons/5/57/Villa_Manin_-_Passariano.jpg'
+					to='manin'
+					type='Posters'
+					title='Villa Manin'
+					subtitle='Passariano'
 				/>
 				<Study
-					img='/cat/lima/4.png'
+					img='/cases/lima/4.png'
 					to='lima'
 					type='Waifinding'
 					title='Metro de Lima'
@@ -119,13 +119,13 @@ export function Lima() {
 					subtitle='A new flavour'
 				/>
 				<Study
-					img='/cat/yape/yape_4.png'
-					to='yape-srl'
+					img='/cases/yape/yape_4.png'
+					to='yape'
 					type='Corporate'
 					title='Yape'
 					subtitle='e-Novia'
 				/>
 			</StudiesGrid>
-		</>
+		</section>
 	);
 }

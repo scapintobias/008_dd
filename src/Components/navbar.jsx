@@ -4,49 +4,51 @@ import { NavLink } from 'react-router-dom';
 
 function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
-
 	return (
-		<div className='z-50 w-screen'>
-			<nav className='sm:px-1.5 sm:pt-0.5 xl:px-0 md:pt-2 pb-1.5'>
-				<div className='mx-auto max-w-7xl'>
-					<div className='flex justify-between h-8'>
-						<div className='flex items-end justify-between md:min-w-full'>
-							<NavLink className='flex-shrink-0' to='/'>
-								<span className='font-black tracking-tighter text-ruby-400 md:text-4xl sm:text-2xl hover:text-charcoal-800'>
-									DisciplineDesign
-								</span>
+		<nav className='z-50 w-screen'>
+			<section>
+				<div className='max-w-screen-xl mx-auto sm:px-1.5 xl:px-0'>
+					<div className='flex items-center justify-between h-8'>
+						<div className='flex items-center justify-between md:min-w-full'>
+							<NavLink
+								className='text-2xl font-black tracking-tighter text-ruby-400'
+								to='/'
+							>
+								DD
 							</NavLink>
-							<div className='flex items-baseline justify-between pb-1.5 space-x-8 sm:hidden md:block pr-1'>
-								<NavLink
-									to='/work'
-									className='font-light uppercase text-ruby-400 hover:text-charcoal-800'
-									activeClassName='text-gray-600'
-								>
-									Work
-								</NavLink>
+							<div className='hidden md:block '>
+								<div className='flex gap-3 uppercase text-ruby-400'>
+									<NavLink
+										to='/work'
+										className=' hover:text-charcoal-800'
+										activeClassName='text-charcoal-800'
+									>
+										Work
+									</NavLink>
 
-								<NavLink
-									to='/about'
-									className='font-light uppercase text-ruby-400 hover:text-charcoal-800'
-									activeClassName='text-gray-600'
-								>
-									About
-								</NavLink>
+									<NavLink
+										to='/about'
+										className=' hover:text-charcoal-800'
+										activeClassName='text-charcoal-800'
+									>
+										About
+									</NavLink>
 
-								<NavLink
-									to='/contacts'
-									className='font-light uppercase text-ruby-400 hover:text-charcoal-800'
-									activeClassName='text-gray-600'
-								>
-									Contacts
-								</NavLink>
+									<NavLink
+										to='/contacts'
+										className=' hover:text-charcoal-800'
+										activeClassName='text-charcoal-800'
+									>
+										Contacts
+									</NavLink>
+								</div>
 							</div>
 						</div>
-						<div className='flex -mr-2 md:hidden'>
+						<div className='flex md:hidden'>
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type='button'
-								className='inline-flex items-center justify-center p-2 text-gray-900 bg-white rounded-md hover:text-gray-900 hover:ring-0 active:ring-0 focus:outline-none'
+								className='inline-flex items-center justify-center text-gray-900 bg-white rounded-md hover:text-gray-900 hover:ring-0 active:ring-0 focus:outline-none'
 								aria-controls='mobile-menu'
 								aria-expanded='false'
 							>
@@ -89,43 +91,46 @@ function Nav() {
 					</div>
 				</div>
 
-				<Transition show={isOpen}>
+				<Transition
+					show={isOpen}
+					enter='transition ease-out duration-100 transform'
+					enterFrom='opacity-0 scale-95'
+					enterTo='opacity-100 scale-100'
+					leave='transition ease-in duration-75 transform'
+					leaveFrom='opacity-100 scale-100'
+					leaveTo='opacity-0 scale-95'
+				>
 					<div
-						className='absolute right-0 w-full bg-white top-12 md:hidden '
+						className='absolute z-50 flex flex-col items-end justify-center w-full gap-4 pr-2 text-3xl font-light uppercase bg-white h-mnav md:hidden text-ruby-400'
 						id='mobile-menu'
 					>
-						<div className='pt-4 pb-3 mt-2 space-y-1 sm:px-3'>
-							<NavLink
-								to='/work'
-								className='block w-full px-4 text-lg font-light text-right uppercase rounded-full text-ruby-400 hover:bg-white hover:text-black'
-								onClick={() => setIsOpen(!isOpen)}
-								activeClassName='text-gray-600'
-							>
-								Work
-							</NavLink>
+						<NavLink
+							to='/work'
+							onClick={() => setIsOpen(!isOpen)}
+							activeClassName='text-charcoal-800'
+						>
+							Work
+						</NavLink>
 
-							<NavLink
-								to='/about'
-								className='block w-full px-4 text-lg font-light text-right uppercase rounded-full text-ruby-400 hover:bg-white hover:text-black'
-								onClick={() => setIsOpen(!isOpen)}
-								activeClassName='text-gray-600'
-							>
-								About
-							</NavLink>
+						<NavLink
+							to='/about'
+							onClick={() => setIsOpen(!isOpen)}
+							activeClassName='text-charcoal-800'
+						>
+							About
+						</NavLink>
 
-							<NavLink
-								to='/contacts'
-								className='block w-full px-4 text-lg font-light text-right uppercase rounded-full text-ruby-400 hover:bg-white hover:text-black'
-								onClick={() => setIsOpen(!isOpen)}
-								activeClassName='text-gray-600'
-							>
-								Contacts
-							</NavLink>
-						</div>
+						<NavLink
+							to='/contacts'
+							onClick={() => setIsOpen(!isOpen)}
+							activeClassName='text-charcoal-800'
+						>
+							Contacts
+						</NavLink>
 					</div>
 				</Transition>
-			</nav>
-		</div>
+			</section>
+		</nav>
 	);
 }
 

@@ -6,15 +6,15 @@ export default function Homegrid() {
 		<div className='w-full py-28'>
 			<div className='flex lg:flex-row sm:flex-col '>
 				<NavLink
-					to='/'
+					to='/work/study/borromeo5'
 					className='p-2 border-opacity-50 sm:border-t lg:w-3/12 lg:border-t-0 lg:border-b group border-charcoal-100 lg:border-r hover:bg-charcoal-50 lg:h-64 sm:h-52'
 				>
-					<p className='text-xs uppercase font-extralight'>1st Child</p>
+					<p className='text-xs uppercase font-extralight'>corporate image</p>
 					<p className='pt-8 text-3xl font-light group-hover:text-ruby-400'>
-						2nd child
+						Borromeo
 					</p>
 					<p className='pt-3 text-lg font-extralight group-hover:text-ruby-400'>
-						3rd child
+						Sparkly bar in the heart of Milan
 					</p>
 				</NavLink>
 				<NavLink

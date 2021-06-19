@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/navbar';
 import { Homepage, Work, About } from './Pages';
-import { Borromeo, Lima, Yape, YapeSrl } from './cases';
+import { Borromeo, Lima, Manin, Yape } from './cases';
 
 import Logos from './components/logos';
 import { __RouterContext } from 'react-router';
@@ -30,8 +30,8 @@ function PageContent() {
 			<Route path='/about' exact component={About} />
 			<Route path='/work' exact component={Work} />
 			<Route path='/work/logos' exact component={Logos} />
+			<Route path='/work/study/manin' component={Manin} />
 			<Route path='/work/study/yape' component={Yape} />
-			<Route path='/work/study/yape-srl' component={YapeSrl} />
 			<Route path='/work/study/lima' component={Lima} />
 			<Route path='/work/study/borromeo5' component={Borromeo} />
 		</Switch>

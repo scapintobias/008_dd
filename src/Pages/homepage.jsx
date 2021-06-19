@@ -6,7 +6,10 @@ import Homegrid from '../components/homegrid';
 export const Homepage = () => (
 	<section className='max-w-screen-xl px-2 pt-20 mx-auto xl:px-0'>
 		<div className='pb-32 space-y-2 font-extralight sm:text-2xl t:text-4xl md:text-5xl l:text-6xl text-ruby-400'>
-			<p>We help companies</p>
+			<p>
+				At <span className='font-black tracking-tighter'>DisciplineDesign</span>
+			</p>
+			<p>we help companies</p>
 			<p> and businesses grow</p>
 			<p> by designing things</p>
 			<p>since 2008.</p>

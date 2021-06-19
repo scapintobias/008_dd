@@ -26,7 +26,7 @@ export const Study = (props) => {
 export const StudiesGrid = (props) => {
 	return (
 		<>
-			<div className='flex flex-col pb-16 mx-auto max-w-7xl sm:px-6 lg:px-8'>
+			<div className='flex flex-col pb-16 mx-auto sm:px-2 xl:px-0'>
 				<div className='pb-8'>
 					<p className='text-3xl font-light'>Case Studies</p>
 					<p className='text-lg font-extralight'>selected projects</p>
@@ -39,12 +39,6 @@ export const StudiesGrid = (props) => {
 	);
 };
 
-export const Main = ({ children }) => (
-	<main className='flex flex-col sm:mt-4 md:mt-6 md:mb-18 sm:mb-24 md:mx-6 sm:mx-4'>
-		{children}
-	</main>
-);
-
 export const Par = ({ children }) => (
 	<section className='max-w-3xl px-4 py-10 mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl'>
 		<div className='mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl'>
@@ -53,12 +47,6 @@ export const Par = ({ children }) => (
 	</section>
 );
 
-export const Sec = ({ title, subtitle }) => (
-	<div className='font-sans prose prose-charcoal'>
-		<h1>{title}</h1>
-		<h2 className='text-charcoal-300 text-subsec'>{subtitle}</h2>
-	</div>
-);
 export const Specimen = (props) => (
 	<div className={props.className}>
 		<div className='p-6 space-y-4 bg-charcoal-50 bg-opacity-40 rounded-3xl'>

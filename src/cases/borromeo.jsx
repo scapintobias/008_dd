@@ -6,12 +6,12 @@ export function Borromeo() {
 			<div className='flex items-center justify-center w-screen bg-red-800 h-study'>
 				<img
 					alt='borromeo'
-					src='/cat/borromeo/borromeo__logo.png'
+					src='/cases/borromeo/borromeo__logo.png'
 					className='px-8'
 				/>
 			</div>
-			<img alt='borromeo' src='/cat/borromeo/borromeo.jpg' />
-			<img alt='borromeo' src='/cat/borromeo/borromeo 02.png' />
+			<img alt='borromeo' src='/cases/borromeo/borromeo.jpg' />
+			<img alt='borromeo' src='/cases/borromeo/borromeo 02.png' />
 			<div className='flex items-center justify-center h-main'>
 				<iframe
 					title='map'

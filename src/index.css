@@ -35,20 +35,17 @@ body {
 		max-height: calc(100vh - 5.5rem);
 	}
 
-	.h-lima {
-		height: calc(100vh - 14rem);
-	}
 	.h-main {
-		height: calc(100vh - 7rem);
+		height: calc(100vh - 2rem);
 	}
-	.h-home {
-		height: calc(100vh - 6.5rem);
+	.h-mnav {
+		height: calc(100vh - 2rem);
 	}
 	.h-study {
-		height: calc(100vh - 57.5px);
+		height: calc(100vh - 2rem);
 	}
 	.h-slider {
-		height: calc(100vh - 8rem);
+		height: calc(100vh - 2rem);
 	}
 	.col-1 {
 		column-count: 1;
