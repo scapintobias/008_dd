@@ -4,23 +4,28 @@ import { ContactLink } from '../components/contactlink';
 import Homegrid from '../components/homegrid';
 
 export const Homepage = () => (
-	<section className='max-w-screen-xl px-2 pt-20 mx-auto xl:px-0'>
-		<div className='pb-32 space-y-2 font-extralight sm:text-2xl t:text-4xl md:text-5xl l:text-6xl text-ruby-400'>
-			<p>
-				At <span className='font-black tracking-tighter'>DisciplineDesign</span>
-			</p>
-			<p>we help companies</p>
-			<p> and businesses grow</p>
-			<p> by designing things</p>
-			<p>since 2008.</p>
+	<main className='pt-20'>
+		<div className='pb-32 space-y-2 font-thin leading-loose sm:text-2xl t:text-4xl md:text-5xl l:text-6xl text-ruby-400'>
+			At{' '}
+			<span className='tracking-tighter font-condensed-extra-black'>
+				DisciplineDesign
+			</span>
+			<br />
+			we help companies
+			<br />
+			and businesses grow
+			<br />
+			by designing things
+			<br />
+			since 2008.
 		</div>
 		<NavLink
 			to='/about'
-			className='px-4 py-3 uppercase rounded-full sm:text-sm md:text-base l:text-2xl bg-charcoal-50 font-extralight hover:bg-ruby-400 hover:text-white'
+			className='px-4 pt-3 pb-2 font-thin uppercase rounded-full sm:text-sm md:text-base l:text-2xl bg-charcoal-50 hover:bg-ruby-400 hover:text-white'
 		>
 			About us
 		</NavLink>
 		<Homegrid />
 		<ContactLink />
-	</section>
+	</main>
 );

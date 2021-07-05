@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 function Title() {
 	return (
 		<div className='pb-16 l:w-6/12'>
-			<p className='font-medium sm:text-xl t:text-3xl'>Collections</p>
-			<p className='sm:text-sm t:text-lg font-extralight'>
+			<div className='font-normal sm:text-xl t:text-3xl'>Collections</div>
+			<div className='font-thin tracking-normal sm:text-sm t:text-lg'>
 				An overview of our wide fields of action
-			</p>
+			</div>
 		</div>
 	);
 }
@@ -16,8 +16,10 @@ function Item(props) {
 	return (
 		<div>
 			<NavLink to={'/work/' + props.to} className='hover:text-ruby-400'>
-				<p className='font-light sm:text-xl t:text-3xl'>{props.type}</p>
-				<p className='sm:text-sm t:text-lg font-extralight'>{props.payoff}</p>
+				<div className='font-light sm:text-xl t:text-3xl'>{props.type}</div>
+				<div className='font-thin tracking-normal sm:text-sm t:text-lg'>
+					{props.payoff}
+				</div>
 			</NavLink>
 		</div>
 	);

@@ -3,33 +3,61 @@ module.exports = {
 	mode: 'jit',
 	purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
 	darkMode: false, // or 'media' or 'class'
-	plugins: [require('@tailwindcss/typography')],
 
 	theme: {
 		extend: {
-			typography: {
-				DEFAULT: {
-					css: {
-						h1: {
-							fontWeight: '400',
-						},
-						h2: {
-							fontWeight: '300',
-						},
-						h3: {
-							fontWeight: '200',
-						},
-						h4: {
-							fontWeight: '200',
-						},
-						p: {
-							fontWeight: '200',
-						},
-						ul: {
-							fontWeight: '200',
-						},
-					},
-				},
+			fontFamily: {
+				sans: ['UniversNextPro', 'normal'],
+				serif: ['Charter', 'normal'],
+			},
+			fontSize: {
+				'xs': ['0.75rem', '0.85rem'],
+				'sm': ['0.875rem', '1.25rem'],
+				'base': ['1rem', '1.5rem'],
+				'lg': ['1.125rem', '1.75rem'],
+				'xl': ['21px', '32px'],
+				'2xl': ['1.5rem', '2rem'],
+				'3xl': ['1.875rem', '2.25rem'],
+				'4xl': ['2.25rem', '2.5rem'],
+				'5xl': ['3rem', '1.2'],
+				'6xl': ['3.75rem', '1.2'],
+				'7xl': ['4.5rem', '1.2'],
+				'8xl': ['6rem', '1.2'],
+				'9xl': ['8rem', '1.2'],
+			},
+			fontWeight: {
+				'compressed-ultra-light': 110,
+				'condensed-ultra-light': 120,
+				'ultra-light': 130,
+				'extended-ultra-light': 140,
+				'compressed-thin': 210,
+				'condensed-thin': 220,
+				'thin': 230,
+				'extended-thin': 240,
+				'compressed-light': 310,
+				'condensed-light': 320,
+				'light': 330,
+				'extended-light': 340,
+				'compressed': 410,
+				'condensed': 420,
+				'normal': 430,
+				'extended': 440,
+				'compressed-medium': 510,
+				'condensed-medium': 520,
+				'medium': 530,
+				'extended-medium': 540,
+				'condensed-bold': 620,
+				'bold': 630,
+				'extended-bold': 640,
+				'condensed-heavy': 720,
+				'heavy': 730,
+				'extended-heavy': 740,
+				'condensed-black': 820,
+				'black': 830,
+				'extended-black': 840,
+				'condensed-extra-black': 920,
+				'extra-black': 930,
+				'extended-extra-black': 940,
 			},
 			colors: {
 				ruby: {
@@ -73,25 +101,6 @@ module.exports = {
 
 			'2xl': '2560px',
 			// => @media (min-width: 1536px) { ... }
-		},
-		fontFamily: {
-			sans: ['Inter', 'sans-serif'],
-			serif: ['Charter', 'normal'],
-		},
-		fontSize: {
-			'xs': ['0.75rem', '0.85rem'],
-			'sm': ['0.875rem', '1.25rem'],
-			'base': ['1rem', '1.5rem'],
-			'lg': ['1.125rem', '1.75rem'],
-			'xl': ['21px', '32px'],
-			'2xl': ['1.5rem', '2rem'],
-			'3xl': ['1.875rem', '2.25rem'],
-			'4xl': ['2.25rem', '2.5rem'],
-			'5xl': ['3rem', '1'],
-			'6xl': ['3.75rem', '1'],
-			'7xl': ['4.5rem', '1'],
-			'8xl': ['6rem', '1'],
-			'9xl': ['8rem', '1'],
 		},
 	},
 };

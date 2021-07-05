@@ -3,8 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://rsms.me/inter/inter.css');
+.inter {
+	font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+	.inter {
+		font-family: 'Inter var', sans-serif;
+	}
+}
+
 body {
 	background-color: #fffff7;
+	font-weight: 430;
+	font-style: normal;
+	@apply tracking-tighter;
 }
 
 ::-moz-selection {
@@ -24,28 +37,11 @@ body {
 }
 
 @layer utilities {
-	.mb-18 {
-		margin-bottom: 4.5rem;
+	.h-title {
+		height: calc(100vh - 32.5px);
 	}
-	.mt-22 {
-		margin-top: 5.5rem;
-	}
-
-	.max-h-work {
-		max-height: calc(100vh - 5.5rem);
-	}
-
-	.h-main {
-		height: calc(100vh - 2rem);
-	}
-	.h-mnav {
-		height: calc(100vh - 2rem);
-	}
-	.h-study {
-		height: calc(100vh - 2rem);
-	}
-	.h-slider {
-		height: calc(100vh - 2rem);
+	.h-whole {
+		height: -webkit-fill-available;
 	}
 	.col-1 {
 		column-count: 1;
@@ -62,7 +58,36 @@ body {
 }
 
 @layer base {
+	main {
+		@apply max-w-screen-xl mx-auto sm:px-2 xl:px-0;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-normal md:pt-5 md:mb-2 sm:pt-3 sm:mb-1;
+	}
 	h1 {
-		font-weight: 400;
+		@apply mb-3 tracking-tighter md:text-4xl sm:text-3xl;
+	}
+	h2 {
+		@apply md:text-3xl sm:text-2xl;
+	}
+	h3 {
+		@apply md:text-2xl sm:text-xl;
+	}
+	h4 {
+		@apply md:text-xl sm:text-base;
+	}
+
+	p {
+		@apply md:mb-4 sm:mb-1 sm:text-sm md:text-base;
+	}
+
+	ul,
+	li {
+		@apply sm:text-sm md:text-base;
 	}
 }

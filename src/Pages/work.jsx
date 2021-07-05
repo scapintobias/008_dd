@@ -6,10 +6,10 @@ import { ContactLink } from '../components/contactlink';
 
 export function Work() {
 	return (
-		<>
+		<main>
 			<Collection />
 			<CaseStudies />
-			<ContactLink className='sm:px-4 xl:px-0' />
-		</>
+			<ContactLink />
+		</main>
 	);
 }

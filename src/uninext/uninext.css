@@ -1,0 +1,719 @@
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Bold.eot');
+	src: url('UniversNextPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Bold.svg#UniversNextPro-Bold') format('svg'),
+		url('UniversNextPro-Bold.ttf') format('truetype'),
+		url('UniversNextPro-Bold.woff') format('woff'),
+		url('UniversNextPro-Bold.woff2') format('woff2');
+	font-weight: 630;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Black.eot');
+	src: url('UniversNextPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Black.svg#UniversNextPro-Black') format('svg'),
+		url('UniversNextPro-Black.ttf') format('truetype'),
+		url('UniversNextPro-Black.woff') format('woff'),
+		url('UniversNextPro-Black.woff2') format('woff2');
+	font-weight: 830;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BlackExt.eot');
+	src: url('UniversNextPro-BlackExt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BlackExt.svg#UniversNextPro-BlackExt') format('svg'),
+		url('UniversNextPro-BlackExt.ttf') format('truetype'),
+		url('UniversNextPro-BlackExt.woff') format('woff'),
+		url('UniversNextPro-BlackExt.woff2') format('woff2');
+	font-weight: 930;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BlackCond.eot');
+	src: url('UniversNextPro-BlackCond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BlackCond.svg#UniversNextPro-BlackCond') format('svg'),
+		url('UniversNextPro-BlackCond.ttf') format('truetype'),
+		url('UniversNextPro-BlackCond.woff') format('woff'),
+		url('UniversNextPro-BlackCond.woff2') format('woff2');
+	font-weight: 820;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BlackCondIt.eot');
+	src: url('UniversNextPro-BlackCondIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BlackCondIt.svg#UniversNextPro-BlackCondIt')
+			format('svg'),
+		url('UniversNextPro-BlackCondIt.ttf') format('truetype'),
+		url('UniversNextPro-BlackCondIt.woff') format('woff'),
+		url('UniversNextPro-BlackCondIt.woff2') format('woff2');
+	font-weight: 820;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-HeavyCondIt.eot');
+	src: url('UniversNextPro-HeavyCondIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-HeavyCondIt.svg#UniversNextPro-HeavyCondIt')
+			format('svg'),
+		url('UniversNextPro-HeavyCondIt.ttf') format('truetype'),
+		url('UniversNextPro-HeavyCondIt.woff') format('woff'),
+		url('UniversNextPro-HeavyCondIt.woff2') format('woff2');
+	font-weight: 820;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BlackExtIt.eot');
+	src: url('UniversNextPro-BlackExtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BlackExtIt.svg#UniversNextPro-BlackExtIt') format('svg'),
+		url('UniversNextPro-BlackExtIt.ttf') format('truetype'),
+		url('UniversNextPro-BlackExtIt.woff') format('woff'),
+		url('UniversNextPro-BlackExtIt.woff2') format('woff2');
+	font-weight: 840;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BlackItalic.eot');
+	src: url('UniversNextPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BlackItalic.svg#UniversNextPro-BlackItalic')
+			format('svg'),
+		url('UniversNextPro-BlackItalic.ttf') format('truetype'),
+		url('UniversNextPro-BlackItalic.woff') format('woff'),
+		url('UniversNextPro-BlackItalic.woff2') format('woff2');
+	font-weight: 830;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BoldCondIt.eot');
+	src: url('UniversNextPro-BoldCondIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BoldCondIt.svg#UniversNextPro-BoldCondIt') format('svg'),
+		url('UniversNextPro-BoldCondIt.ttf') format('truetype'),
+		url('UniversNextPro-BoldCondIt.woff') format('woff'),
+		url('UniversNextPro-BoldCondIt.woff2') format('woff2');
+	font-weight: 620;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BoldExt.eot');
+	src: url('UniversNextPro-BoldExt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BoldExt.svg#UniversNextPro-BoldExt') format('svg'),
+		url('UniversNextPro-BoldExt.ttf') format('truetype'),
+		url('UniversNextPro-BoldExt.woff') format('woff'),
+		url('UniversNextPro-BoldExt.woff2') format('woff2');
+	font-weight: 640;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BoldCond.eot');
+	src: url('UniversNextPro-BoldCond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BoldCond.svg#UniversNextPro-BoldCond') format('svg'),
+		url('UniversNextPro-BoldCond.ttf') format('truetype'),
+		url('UniversNextPro-BoldCond.woff') format('woff'),
+		url('UniversNextPro-BoldCond.woff2') format('woff2');
+	font-weight: 620;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Light.eot');
+	src: url('UniversNextPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Light.svg#UniversNextPro-Light') format('svg'),
+		url('UniversNextPro-Light.ttf') format('truetype'),
+		url('UniversNextPro-Light.woff') format('woff'),
+		url('UniversNextPro-Light.woff2') format('woff2');
+	font-weight: 330;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BoldExtIt.eot');
+	src: url('UniversNextPro-BoldExtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BoldExtIt.svg#UniversNextPro-BoldExtIt') format('svg'),
+		url('UniversNextPro-BoldExtIt.ttf') format('truetype'),
+		url('UniversNextPro-BoldExtIt.woff') format('woff'),
+		url('UniversNextPro-BoldExtIt.woff2') format('woff2');
+	font-weight: 640;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Compressed.eot');
+	src: url('UniversNextPro-Compressed.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Compressed.svg#UniversNextPro-Compressed') format('svg'),
+		url('UniversNextPro-Compressed.ttf') format('truetype'),
+		url('UniversNextPro-Compressed.woff') format('woff'),
+		url('UniversNextPro-Compressed.woff2') format('woff2');
+	font-weight: 410;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Cond.eot');
+	src: url('UniversNextPro-Cond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Cond.svg#UniversNextPro-Cond') format('svg'),
+		url('UniversNextPro-Cond.ttf') format('truetype'),
+		url('UniversNextPro-Cond.woff') format('woff'),
+		url('UniversNextPro-Cond.woff2') format('woff2');
+	font-weight: 420;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-BoldItalic.eot');
+	src: url('UniversNextPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-BoldItalic.svg#UniversNextPro-BoldItalic') format('svg'),
+		url('UniversNextPro-BoldItalic.ttf') format('truetype'),
+		url('UniversNextPro-BoldItalic.woff') format('woff'),
+		url('UniversNextPro-BoldItalic.woff2') format('woff2');
+	font-weight: 630;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-CondItalic.eot');
+	src: url('UniversNextPro-CondItalic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-CondItalic.svg#UniversNextPro-CondItalic') format('svg'),
+		url('UniversNextPro-CondItalic.ttf') format('truetype'),
+		url('UniversNextPro-CondItalic.woff') format('woff'),
+		url('UniversNextPro-CondItalic.woff2') format('woff2');
+	font-weight: 420;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-HeavyCond.eot');
+	src: url('UniversNextPro-HeavyCond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-HeavyCond.svg#UniversNextPro-HeavyCond') format('svg'),
+		url('UniversNextPro-HeavyCond.ttf') format('truetype'),
+		url('UniversNextPro-HeavyCond.woff') format('woff'),
+		url('UniversNextPro-HeavyCond.woff2') format('woff2');
+	font-weight: 720;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-HeavyExt.eot');
+	src: url('UniversNextPro-HeavyExt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-HeavyExt.svg#UniversNextPro-HeavyExt') format('svg'),
+		url('UniversNextPro-HeavyExt.ttf') format('truetype'),
+		url('UniversNextPro-HeavyExt.woff') format('woff'),
+		url('UniversNextPro-HeavyExt.woff2') format('woff2');
+	font-weight: 740;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Ext.eot');
+	src: url('UniversNextPro-Ext.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Ext.svg#UniversNextPro-Ext') format('svg'),
+		url('UniversNextPro-Ext.ttf') format('truetype'),
+		url('UniversNextPro-Ext.woff') format('woff'),
+		url('UniversNextPro-Ext.woff2') format('woff2');
+	font-weight: 440;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-ExtItalic.eot');
+	src: url('UniversNextPro-ExtItalic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-ExtItalic.svg#UniversNextPro-ExtItalic') format('svg'),
+		url('UniversNextPro-ExtItalic.ttf') format('truetype'),
+		url('UniversNextPro-ExtItalic.woff') format('woff'),
+		url('UniversNextPro-ExtItalic.woff2') format('woff2');
+	font-weight: 440;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Heavy.eot');
+	src: url('UniversNextPro-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Heavy.svg#UniversNextPro-Heavy') format('svg'),
+		url('UniversNextPro-Heavy.ttf') format('truetype'),
+		url('UniversNextPro-Heavy.woff') format('woff'),
+		url('UniversNextPro-Heavy.woff2') format('woff2');
+	font-weight: 730;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-HeavyExtIt.eot');
+	src: url('UniversNextPro-HeavyExtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-HeavyExtIt.svg#UniversNextPro-HeavyExtIt') format('svg'),
+		url('UniversNextPro-HeavyExtIt.ttf') format('truetype'),
+		url('UniversNextPro-HeavyExtIt.woff') format('woff'),
+		url('UniversNextPro-HeavyExtIt.woff2') format('woff2');
+	font-weight: 740;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-LightCondIt.eot');
+	src: url('UniversNextPro-LightCondIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-LightCondIt.svg#UniversNextPro-LightCondIt')
+			format('svg'),
+		url('UniversNextPro-LightCondIt.ttf') format('truetype'),
+		url('UniversNextPro-LightCondIt.woff') format('woff'),
+		url('UniversNextPro-LightCondIt.woff2') format('woff2');
+	font-weight: 320;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-LightCm.eot');
+	src: url('UniversNextPro-LightCm.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-LightCm.svg#UniversNextPro-LightCm') format('svg'),
+		url('UniversNextPro-LightCm.ttf') format('truetype'),
+		url('UniversNextPro-LightCm.woff') format('woff'),
+		url('UniversNextPro-LightCm.woff2') format('woff2');
+	font-weight: 310;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-LightCond.eot');
+	src: url('UniversNextPro-LightCond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-LightCond.svg#UniversNextPro-LightCond') format('svg'),
+		url('UniversNextPro-LightCond.ttf') format('truetype'),
+		url('UniversNextPro-LightCond.woff') format('woff'),
+		url('UniversNextPro-LightCond.woff2') format('woff2');
+	font-weight: 320;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-HeavyItalic.eot');
+	src: url('UniversNextPro-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-HeavyItalic.svg#UniversNextPro-HeavyItalic')
+			format('svg'),
+		url('UniversNextPro-HeavyItalic.ttf') format('truetype'),
+		url('UniversNextPro-HeavyItalic.woff') format('woff'),
+		url('UniversNextPro-HeavyItalic.woff2') format('woff2');
+	font-weight: 730;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Italic.eot');
+	src: url('UniversNextPro-Italic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Italic.svg#UniversNextPro-Italic') format('svg'),
+		url('UniversNextPro-Italic.ttf') format('truetype'),
+		url('UniversNextPro-Italic.woff') format('woff'),
+		url('UniversNextPro-Italic.woff2') format('woff2');
+	font-weight: 430;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-LightExtIt.eot');
+	src: url('UniversNextPro-LightExtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-LightExtIt.svg#UniversNextPro-LightExtIt') format('svg'),
+		url('UniversNextPro-LightExtIt.ttf') format('truetype'),
+		url('UniversNextPro-LightExtIt.woff') format('woff'),
+		url('UniversNextPro-LightExtIt.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-LightExt.eot');
+	src: url('UniversNextPro-LightExt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-LightExt.svg#UniversNextPro-LightExt') format('svg'),
+		url('UniversNextPro-LightExt.ttf') format('truetype'),
+		url('UniversNextPro-LightExt.woff') format('woff'),
+		url('UniversNextPro-LightExt.woff2') format('woff2');
+	font-weight: 340;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-LightItalic.eot');
+	src: url('UniversNextPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-LightItalic.svg#UniversNextPro-LightItalic')
+			format('svg'),
+		url('UniversNextPro-LightItalic.ttf') format('truetype'),
+		url('UniversNextPro-LightItalic.woff') format('woff'),
+		url('UniversNextPro-LightItalic.woff2') format('woff2');
+	font-weight: 330;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-MediumCm.eot');
+	src: url('UniversNextPro-MediumCm.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-MediumCm.svg#UniversNextPro-MediumCm') format('svg'),
+		url('UniversNextPro-MediumCm.ttf') format('truetype'),
+		url('UniversNextPro-MediumCm.woff') format('woff'),
+		url('UniversNextPro-MediumCm.woff2') format('woff2');
+	font-weight: 510;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-MediumCondIt.eot');
+	src: url('UniversNextPro-MediumCondIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-MediumCondIt.svg#UniversNextPro-MediumCondIt')
+			format('svg'),
+		url('UniversNextPro-MediumCondIt.ttf') format('truetype'),
+		url('UniversNextPro-MediumCondIt.woff') format('woff'),
+		url('UniversNextPro-MediumCondIt.woff2') format('woff2');
+	font-weight: 520;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Medium.eot');
+	src: url('UniversNextPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Medium.svg#UniversNextPro-Medium') format('svg'),
+		url('UniversNextPro-Medium.ttf') format('truetype'),
+		url('UniversNextPro-Medium.woff') format('woff'),
+		url('UniversNextPro-Medium.woff2') format('woff2');
+	font-weight: 530;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-ThinCond.eot');
+	src: url('UniversNextPro-ThinCond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-ThinCond.svg#UniversNextPro-ThinCond') format('svg'),
+		url('UniversNextPro-ThinCond.ttf') format('truetype'),
+		url('UniversNextPro-ThinCond.woff') format('woff'),
+		url('UniversNextPro-ThinCond.woff2') format('woff2');
+	font-weight: 220;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-MediumCond.eot');
+	src: url('UniversNextPro-MediumCond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-MediumCond.svg#UniversNextPro-MediumCond') format('svg'),
+		url('UniversNextPro-MediumCond.ttf') format('truetype'),
+		url('UniversNextPro-MediumCond.woff') format('woff'),
+		url('UniversNextPro-MediumCond.woff2') format('woff2');
+	font-weight: 520;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-UltLtExt.eot');
+	src: url('UniversNextPro-UltLtExt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-UltLtExt.svg#UniversNextPro-UltLtExt') format('svg'),
+		url('UniversNextPro-UltLtExt.ttf') format('truetype'),
+		url('UniversNextPro-UltLtExt.woff') format('woff'),
+		url('UniversNextPro-UltLtExt.woff2') format('woff2');
+	font-weight: 140;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-MediumExtIt.eot');
+	src: url('UniversNextPro-MediumExtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-MediumExtIt.svg#UniversNextPro-MediumExtIt')
+			format('svg'),
+		url('UniversNextPro-MediumExtIt.ttf') format('truetype'),
+		url('UniversNextPro-MediumExtIt.woff') format('woff'),
+		url('UniversNextPro-MediumExtIt.woff2') format('woff2');
+	font-weight: 540;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-MediumItalic.eot');
+	src: url('UniversNextPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-MediumItalic.svg#UniversNextPro-MediumItalic')
+			format('svg'),
+		url('UniversNextPro-MediumItalic.ttf') format('truetype'),
+		url('UniversNextPro-MediumItalic.woff') format('woff'),
+		url('UniversNextPro-MediumItalic.woff2') format('woff2');
+	font-weight: 530;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-MediumExt.eot');
+	src: url('UniversNextPro-MediumExt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-MediumExt.svg#UniversNextPro-MediumExt') format('svg'),
+		url('UniversNextPro-MediumExt.ttf') format('truetype'),
+		url('UniversNextPro-MediumExt.woff') format('woff'),
+		url('UniversNextPro-MediumExt.woff2') format('woff2');
+	font-weight: 540;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-ThinExt.eot');
+	src: url('UniversNextPro-ThinExt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-ThinExt.svg#UniversNextPro-ThinExt') format('svg'),
+		url('UniversNextPro-ThinExt.ttf') format('truetype'),
+		url('UniversNextPro-ThinExt.woff') format('woff'),
+		url('UniversNextPro-ThinExt.woff2') format('woff2');
+	font-weight: 240;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Thin.eot');
+	src: url('UniversNextPro-Thin.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Thin.svg#UniversNextPro-Thin') format('svg'),
+		url('UniversNextPro-Thin.ttf') format('truetype'),
+		url('UniversNextPro-Thin.woff') format('woff'),
+		url('UniversNextPro-Thin.woff2') format('woff2');
+	font-weight: 230;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-ThinCm.eot');
+	src: url('UniversNextPro-ThinCm.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-ThinCm.svg#UniversNextPro-ThinCm') format('svg'),
+		url('UniversNextPro-ThinCm.ttf') format('truetype'),
+		url('UniversNextPro-ThinCm.woff') format('woff'),
+		url('UniversNextPro-ThinCm.woff2') format('woff2');
+	font-weight: 210;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-Regular.eot');
+	src: url('UniversNextPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-Regular.svg#UniversNextPro-Regular') format('svg'),
+		url('UniversNextPro-Regular.ttf') format('truetype'),
+		url('UniversNextPro-Regular.woff') format('woff'),
+		url('UniversNextPro-Regular.woff2') format('woff2');
+	font-weight: 430;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-ThinItalic.eot');
+	src: url('UniversNextPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-ThinItalic.svg#UniversNextPro-ThinItalic') format('svg'),
+		url('UniversNextPro-ThinItalic.ttf') format('truetype'),
+		url('UniversNextPro-ThinItalic.woff') format('woff'),
+		url('UniversNextPro-ThinItalic.woff2') format('woff2');
+	font-weight: 230;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-ThinCondIt.eot');
+	src: url('UniversNextPro-ThinCondIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-ThinCondIt.svg#UniversNextPro-ThinCondIt') format('svg'),
+		url('UniversNextPro-ThinCondIt.ttf') format('truetype'),
+		url('UniversNextPro-ThinCondIt.woff') format('woff'),
+		url('UniversNextPro-ThinCondIt.woff2') format('woff2');
+	font-weight: 220;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-ThinExtIt.eot');
+	src: url('UniversNextPro-ThinExtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-ThinExtIt.svg#UniversNextPro-ThinExtIt') format('svg'),
+		url('UniversNextPro-ThinExtIt.ttf') format('truetype'),
+		url('UniversNextPro-ThinExtIt.woff') format('woff'),
+		url('UniversNextPro-ThinExtIt.woff2') format('woff2');
+	font-weight: 240;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-UltLt.eot');
+	src: url('UniversNextPro-UltLt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-UltLt.svg#UniversNextPro-UltLt') format('svg'),
+		url('UniversNextPro-UltLt.ttf') format('truetype'),
+		url('UniversNextPro-UltLt.woff') format('woff'),
+		url('UniversNextPro-UltLt.woff2') format('woff2');
+	font-weight: 130;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-UltLtCm.eot');
+	src: url('UniversNextPro-UltLtCm.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-UltLtCm.svg#UniversNextPro-UltLtCm') format('svg'),
+		url('UniversNextPro-UltLtCm.ttf') format('truetype'),
+		url('UniversNextPro-UltLtCm.woff') format('woff'),
+		url('UniversNextPro-UltLtCm.woff2') format('woff2');
+	font-weight: 110;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-UltLtCondIt.eot');
+	src: url('UniversNextPro-UltLtCondIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-UltLtCondIt.svg#UniversNextPro-UltLtCondIt')
+			format('svg'),
+		url('UniversNextPro-UltLtCondIt.ttf') format('truetype'),
+		url('UniversNextPro-UltLtCondIt.woff') format('woff'),
+		url('UniversNextPro-UltLtCondIt.woff2') format('woff2');
+	font-weight: 120;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-UltLtCond.eot');
+	src: url('UniversNextPro-UltLtCond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-UltLtCond.svg#UniversNextPro-UltLtCond') format('svg'),
+		url('UniversNextPro-UltLtCond.ttf') format('truetype'),
+		url('UniversNextPro-UltLtCond.woff') format('woff'),
+		url('UniversNextPro-UltLtCond.woff2') format('woff2');
+	font-weight: 120;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-UltLtExtIt.eot');
+	src: url('UniversNextPro-UltLtExtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-UltLtExtIt.svg#UniversNextPro-UltLtExtIt') format('svg'),
+		url('UniversNextPro-UltLtExtIt.ttf') format('truetype'),
+		url('UniversNextPro-UltLtExtIt.woff') format('woff'),
+		url('UniversNextPro-UltLtExtIt.woff2') format('woff2');
+	font-weight: 140;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-UltLtIt.eot');
+	src: url('UniversNextPro-UltLtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-UltLtIt.svg#UniversNextPro-UltLtIt') format('svg'),
+		url('UniversNextPro-UltLtIt.ttf') format('truetype'),
+		url('UniversNextPro-UltLtIt.woff') format('woff'),
+		url('UniversNextPro-UltLtIt.woff2') format('woff2');
+	font-weight: 130;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-XBlackExtIt.eot');
+	src: url('UniversNextPro-XBlackExtIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-XBlackExtIt.svg#UniversNextPro-XBlackExtIt')
+			format('svg'),
+		url('UniversNextPro-XBlackExtIt.ttf') format('truetype'),
+		url('UniversNextPro-XBlackExtIt.woff') format('woff'),
+		url('UniversNextPro-XBlackExtIt.woff2') format('woff2');
+	font-weight: 940;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-XBlackIt.eot');
+	src: url('UniversNextPro-XBlackIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-XBlackIt.svg#UniversNextPro-XBlackIt') format('svg'),
+		url('UniversNextPro-XBlackIt.ttf') format('truetype'),
+		url('UniversNextPro-XBlackIt.woff') format('woff'),
+		url('UniversNextPro-XBlackIt.woff2') format('woff2');
+	font-weight: 930;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-XBlackCondIt.eot');
+	src: url('UniversNextPro-XBlackCondIt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-XBlackCondIt.svg#UniversNextPro-XBlackCondIt')
+			format('svg'),
+		url('UniversNextPro-XBlackCondIt.ttf') format('truetype'),
+		url('UniversNextPro-XBlackCondIt.woff') format('woff'),
+		url('UniversNextPro-XBlackCondIt.woff2') format('woff2');
+	font-weight: 920;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-XBlackCond.eot');
+	src: url('UniversNextPro-XBlackCond.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-XBlackCond.svg#UniversNextPro-XBlackCond') format('svg'),
+		url('UniversNextPro-XBlackCond.ttf') format('truetype'),
+		url('UniversNextPro-XBlackCond.woff') format('woff'),
+		url('UniversNextPro-XBlackCond.woff2') format('woff2');
+	font-weight: 920;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-XBlack.eot');
+	src: url('UniversNextPro-XBlack.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-XBlack.svg#UniversNextPro-XBlack') format('svg'),
+		url('UniversNextPro-XBlack.ttf') format('truetype'),
+		url('UniversNextPro-XBlack.woff') format('woff'),
+		url('UniversNextPro-XBlack.woff2') format('woff2');
+	font-weight: 930;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'UniversNextPro';
+	src: url('UniversNextPro-XBlackExt.eot');
+	src: url('UniversNextPro-XBlackExt.eot?#iefix') format('embedded-opentype'),
+		url('UniversNextPro-XBlackExt.svg#UniversNextPro-XBlackExt') format('svg'),
+		url('UniversNextPro-XBlackExt.ttf') format('truetype'),
+		url('UniversNextPro-XBlackExt.woff') format('woff'),
+		url('UniversNextPro-XBlackExt.woff2') format('woff2');
+	font-weight: 940;
+	font-style: normal;
+}

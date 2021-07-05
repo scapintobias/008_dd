@@ -13,14 +13,16 @@ const Study = (props) => {
 							className='object-cover w-full h-full'
 						/>
 					</div>
-					<div className='sm:px-4 xl:px-0'>
-						<p className='pt-3 text-xs uppercase font-extralight'>
+					<div>
+						<div className='py-2 text-xs font-thin tracking-wide uppercase'>
 							{props.type}
-						</p>
-						<p className='font-light sm:text-xl t:text-3xl'>{props.title}</p>
-						<p className='sm:text-sm t:text-lg font-extralight'>
+						</div>
+						<div className='font-light sm:text-xl t:text-3xl'>
+							{props.title}
+						</div>
+						<div className='font-thin tracking-normal sm:text-sm t:text-lg'>
 							{props.subtitle}
-						</p>
+						</div>
 					</div>
 				</div>
 			</NavLink>
@@ -32,7 +34,7 @@ export const CaseStudies = () => {
 	return (
 		<div className='flex flex-col py-32 mx-auto max-w-7xl'>
 			<div className='pb-16 sm:px-4 xl:px-0'>
-				<p className='font-medium sm:text-xl t:text-3xl'>Selected projects</p>
+				<p className='font-normal sm:text-xl t:text-3xl'>Selected projects</p>
 			</div>
 			<div className='grid l:grid-cols-2 sm:grid-cols-1 gap-y-3'>
 				<Study
@@ -45,7 +47,7 @@ export const CaseStudies = () => {
 				<Study
 					img='/cases/lima/4.png'
 					to='lima'
-					type='Waifinding'
+					type='Wayfinding'
 					title='Metro de Lima'
 					subtitle='Subway'
 				/>

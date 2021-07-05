@@ -4,18 +4,23 @@ import Carousel, {
 	autoplayPlugin,
 } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
+import { NavLink } from 'react-router-dom';
 
 function Item(props) {
 	return (
 		<>
-			<div className='flex items-center justify-center w-full max-w-screen-lg h-slider'>
+			<div className='flex items-center justify-center w-full max-w-screen-lg h-title'>
 				<img src={props.src} alt={props.title} className='px-4 ' />
 			</div>
+			<div className='absolute z-50 flex w-screen mx-auto text-xs font-light tracking-wider md:justify-around md:flex-row sm:flex-col sm:items-center bottom-3'>
+				<NavLink to={'/work/study/' + props.to} className='underline'>
+					{props.link}
+				</NavLink>
+				<div className='flex sm:flex-col md:flex-row sm:items-center sm:pt-4 md:pt-0'>
+					<div className='font-light uppercase md:pr-4'>{props.title}</div>
 
-			<div className='absolute flex justify-center w-screen gap-3 text-xs tracking-wider bottom-3'>
-				<p className='uppercase '>{props.title}</p>
-				<p>—</p>
-				<p className='text-xs italic '>{props.subtitle}</p>
+					<div className='text-xs italic font-thin '>{props.subtitle}</div>
+				</div>
 			</div>
 		</>
 	);
@@ -23,7 +28,7 @@ function Item(props) {
 
 export default function Logos() {
 	return (
-		<div className='flex items-center max-w-screen-xl mx-auto h-slider'>
+		<main className='flex items-center h-title'>
 			<Carousel
 				plugins={[
 					'infinite',
@@ -31,15 +36,19 @@ export default function Logos() {
 					{
 						resolve: autoplayPlugin,
 						options: {
-							interval: 3000,
+							interval: 2500,
 						},
 					},
 
 					{
 						resolve: arrowsPlugin,
 						options: {
-							arrowLeft: <button className='text-gray-300 h-slider'>←</button>,
-							arrowRight: <button className='text-gray-300 h-slider'>→</button>,
+							arrowLeft: (
+								<button className='font-thin text-gray-400 h-slider'>←</button>
+							),
+							arrowRight: (
+								<button className='font-thin text-gray-400 h-slider'>→</button>
+							),
 
 							addArrowClickHandler: true,
 						},
@@ -47,6 +56,13 @@ export default function Logos() {
 				]}
 				animationSpeed={600}
 			>
+				<Item
+					link='Case study'
+					to='yape'
+					subtitle='A very smart robot'
+					title='Yape'
+					src='/img/logos/yape__logo.webp'
+				/>
 				<Item
 					subtitle='Modern art exhibition'
 					title='Corte d’Arte'
@@ -79,10 +95,11 @@ export default function Logos() {
 					src='/img/logos/tokyo__logo.png'
 				/>
 				<Item
+					subtitle='competition'
 					title='Fondazione Castiglioni'
 					src='/img/logos/castiglioni__logo.png'
 				/>
 			</Carousel>
-		</div>
+		</main>
 	);
 }

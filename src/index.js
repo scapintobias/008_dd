@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './type/type.css';
+import './uninext/uninext.css';
 import App from './App';
 
 if (module.hot) {
