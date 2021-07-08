@@ -4,16 +4,20 @@ import { NavLink } from 'react-router-dom';
 
 export const Title = (props) => {
 	return (
-		<div className='flex items-center justify-center w-full h-title'>
-			<div className='absolute w-full text-charcoal-500 bottom-6'>
+		<div className='flex justify-center w-full h-title'>
+			<section className='absolute w-full text-charcoal-500 bottom-6'>
 				<div className='max-w-screen-md sm:mx-4 md:mx-auto'>
 					<p className='font-normal md:pb-1 sm:text-3xl t:text-5xl'>
 						{props.title}
 					</p>
 					<p className='font-thin t:text-4xl sm:text-2xl'>{props.subtitle}</p>
 				</div>
-			</div>
-			<img src={'/cases' + props.src} alt={props.title} className='w-2/3' />
+			</section>
+			<img
+				src={'/cases' + props.src}
+				alt={props.title}
+				className='max-w-screen-lg my-auto'
+			/>
 		</div>
 	);
 };
@@ -59,7 +63,7 @@ export const StudiesGrid = (props) => {
 };
 
 export const Par = ({ children }) => (
-	<section className='max-w-screen-md py-10 mx-auto sm:px-4 l:px-0 sm:py-12 '>
-		<div className='mx-auto font-thin tracking-normal'>{children}</div>
+	<section className='max-w-screen-md py-10 mx-auto sm:px-4 md:px-0 sm:py-12 '>
+		<div className='mx-auto text-lg font-thin tracking-normal'>{children}</div>
 	</section>
 );

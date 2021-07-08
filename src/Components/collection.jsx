@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 function Title() {
 	return (
-		<div className='pb-16 l:w-6/12'>
-			<div className='font-normal sm:text-xl t:text-3xl'>Collections</div>
+		<div className='pb-16 md:w-6/12'>
+			<div className='font-normal sm:text-xl t:text-3xl'>Anthology</div>
 			<div className='font-thin tracking-normal sm:text-sm t:text-lg'>
 				An overview of our wide fields of action
 			</div>
@@ -27,19 +27,15 @@ function Item(props) {
 
 export function Collection() {
 	return (
-		<div className='flex px-4 py-32 mx-auto xl:px-0 sm:flex-col l:flex-row max-w-7xl'>
+		<div className='flex py-32 sm:flex-col md:flex-row'>
 			<Title />
-			<section className='flex-col l:space-y-16 sm:space-y-6'>
+			<section className='flex-col md:space-y-16 sm:space-y-6'>
 				<Item
 					to='logos'
 					type='Logos & Trademarks'
 					payoff='What makes a brand memorable and unique'
 				/>
-				<Item
-					to='corporate'
-					type='Corporate Images'
-					payoff='Bringing life to a Company'
-				/>
+
 				<Item to='print' type='Print' payoff='Text and images laid on paper' />
 				<Item
 					to='posters'

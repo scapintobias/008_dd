@@ -6,8 +6,8 @@ function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
-			<div className='max-w-screen-xl mx-auto sm:px-2 xl:px-0'>
-				<div className='pt-1.5 pb-1 flex w-full justify-between'>
+			<div className='max-w-screen-lg mx-auto text-lg sm:px-2 lg:px-0'>
+				<div className='flex justify-between w-full pt-2 pb-1'>
 					<div className='flex items-center justify-between w-full leading-none'>
 						<NavLink
 							className='font-condensed-extra-black text-ruby-400'
@@ -15,7 +15,7 @@ function Nav() {
 						>
 							DD
 						</NavLink>
-						<div className='hidden font-thin md:block'>
+						<div className='hidden font-light md:block'>
 							<div className='flex gap-3 uppercase text-ruby-400'>
 								<NavLink
 									to='/work'
@@ -43,6 +43,7 @@ function Nav() {
 							</div>
 						</div>
 					</div>
+
 					<div className='flex md:hidden'>
 						<div
 							onClick={() => setIsOpen(!isOpen)}
@@ -83,6 +84,7 @@ function Nav() {
 					</NavLink>
 				</div>
 			</Transition>
+			<hr className='border-ruby-50' />
 		</>
 	);
 }

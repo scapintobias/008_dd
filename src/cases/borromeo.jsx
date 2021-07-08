@@ -7,7 +7,7 @@ export function Borromeo() {
 				<img
 					alt='borromeo'
 					src='/cases/borromeo/borromeo__logo.png'
-					className='px-8'
+					className='max-w-screen-lg sm:px-2 lg:px-0'
 				/>
 			</div>
 			<main className='pt-40'>
@@ -19,7 +19,7 @@ export function Borromeo() {
 					<iframe
 						title='map'
 						src='https://www.google.com/maps/embed?pb=!4v1593527146194!6m8!1m7!1soRCLTqKyBGT0y6ozxy-H2Q!2m2!1d45.46314368044688!2d9.182473936322225!3f94.38994941469211!4f1.7059391248629936!5f0.7820865974627469'
-						width='70%'
+						width='100%'
 						height='70%'
 						frameBorder='0'
 						style={{ border: '0' }}

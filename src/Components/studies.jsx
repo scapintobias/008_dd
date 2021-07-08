@@ -6,11 +6,11 @@ const Study = (props) => {
 		<>
 			<NavLink key={props.type} to={'/work/study/' + props.to}>
 				<div className=' hover:text-ruby-400'>
-					<div className='relative sm:h-80 md:h-96'>
+					<div className='relative sm:h-52 md:h-80'>
 						<img
 							src={props.img}
 							alt='proj'
-							className='object-cover w-full h-full'
+							className='object-cover object-center w-full h-full'
 						/>
 					</div>
 					<div>
@@ -32,11 +32,11 @@ const Study = (props) => {
 
 export const CaseStudies = () => {
 	return (
-		<div className='flex flex-col py-32 mx-auto max-w-7xl'>
-			<div className='pb-16 sm:px-4 xl:px-0'>
-				<p className='font-normal sm:text-xl t:text-3xl'>Selected projects</p>
+		<div className='flex flex-col py-32 mx-auto'>
+			<div className='pb-3 font-normal sm:text-xl t:text-3xl'>
+				Selected projects
 			</div>
-			<div className='grid l:grid-cols-2 sm:grid-cols-1 gap-y-3'>
+			<div className='grid md:grid-cols-2 sm:grid-cols-1 gap-y-3'>
 				<Study
 					img='https://upload.wikimedia.org/wikipedia/commons/5/57/Villa_Manin_-_Passariano.jpg'
 					to='manin'
