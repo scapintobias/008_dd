@@ -14,10 +14,12 @@
 }
 
 body {
+	@apply tracking-tighter;
 	background-color: #fffff7;
 	font-weight: 430;
 	font-style: normal;
-	@apply tracking-tighter;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
@@ -38,7 +40,7 @@ body {
 
 @layer utilities {
 	.h-title {
-		height: calc(100vh - 32.5px);
+		height: calc(100vh - 30px);
 	}
 	.h-whole {
 		height: -webkit-fill-available;
@@ -59,8 +61,9 @@ body {
 
 @layer base {
 	main {
-		@apply max-w-screen-xl mx-auto sm:px-2 xl:px-0;
+		@apply max-w-screen-lg mx-auto sm:px-2 lg:px-0;
 	}
+
 	h1,
 	h2,
 	h3,

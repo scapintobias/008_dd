@@ -5,8 +5,8 @@ import { Par, StudiesGrid, Study, Title } from './components';
 export function Lima() {
 	return (
 		<>
-			<main>
-				<div className='absolute'>
+			<div className='max-w-screen-md mx-auto'>
+				<div className='absolute font-thin'>
 					Collaborator:{' '}
 					<a
 						href='http://www.aetherotopies.com/'
@@ -17,7 +17,8 @@ export function Lima() {
 						Samuel Iuri
 					</a>
 				</div>
-			</main>
+			</div>
+
 			<Title
 				title='Metro de Lima'
 				subtitle='New identity and wayfinding'

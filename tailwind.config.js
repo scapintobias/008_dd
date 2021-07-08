@@ -90,7 +90,7 @@ module.exports = {
 			// => @media (min-width: 320px) { ... }
 			't': '600px',
 			// => @media (min-width: 768px) { ... }
-			'md': '769px',
+			'md': '767px',
 			// => @media (min-width: 768px) { ... }
 			'l': '960px',
 			'lg': '1200px',

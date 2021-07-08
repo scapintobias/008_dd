@@ -1,25 +1,22 @@
 import React from 'react';
-import Carousel, {
-	arrowsPlugin,
-	autoplayPlugin,
-} from '@brainhubeu/react-carousel';
+import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import { NavLink } from 'react-router-dom';
 
 function Item(props) {
 	return (
 		<>
-			<div className='flex items-center justify-center w-full max-w-screen-lg h-title'>
-				<img src={props.src} alt={props.title} className='px-4 ' />
+			<div className='flex items-center justify-center w-full max-w-screen-md h-title'>
+				<img src={props.src} alt={props.title} className='px-4 pb-8' />
 			</div>
-			<div className='absolute z-50 flex w-screen mx-auto text-xs font-light tracking-wider md:justify-around md:flex-row sm:flex-col sm:items-center bottom-3'>
+			<div className='absolute z-50 flex w-screen mx-auto font-light tracking-wider sm:text-xs md:text-lg md:justify-around md:flex-row sm:flex-col sm:items-center bottom-6'>
 				<NavLink to={'/work/study/' + props.to} className='underline'>
 					{props.link}
 				</NavLink>
 				<div className='flex sm:flex-col md:flex-row sm:items-center sm:pt-4 md:pt-0'>
 					<div className='font-light uppercase md:pr-4'>{props.title}</div>
 
-					<div className='text-xs italic font-thin '>{props.subtitle}</div>
+					<div className='italic font-thin '>{props.subtitle}</div>
 				</div>
 			</div>
 		</>
@@ -28,7 +25,7 @@ function Item(props) {
 
 export default function Logos() {
 	return (
-		<main className='flex items-center h-title'>
+		<section className='flex items-center h-whole'>
 			<Carousel
 				plugins={[
 					'infinite',
@@ -40,19 +37,19 @@ export default function Logos() {
 						},
 					},
 
-					{
-						resolve: arrowsPlugin,
-						options: {
-							arrowLeft: (
-								<button className='font-thin text-gray-400 h-slider'>←</button>
-							),
-							arrowRight: (
-								<button className='font-thin text-gray-400 h-slider'>→</button>
-							),
+					// {
+					// 	resolve: arrowsPlugin,
+					// 	options: {
+					// 		arrowLeft: (
+					// 			<button className='font-thin text-gray-400 h-slider'>←</button>
+					// 		),
+					// 		arrowRight: (
+					// 			<button className='font-thin text-gray-400 h-slider'>→</button>
+					// 		),
 
-							addArrowClickHandler: true,
-						},
-					},
+					// 		addArrowClickHandler: true,
+					// 	},
+					// },
 				]}
 				animationSpeed={600}
 			>
@@ -67,6 +64,13 @@ export default function Logos() {
 					subtitle='Modern art exhibition'
 					title='Corte d’Arte'
 					src='/img/logos/corte__logo.png'
+				/>
+				<Item
+					subtitle='A bar at the heat of Milan'
+					title='Borromeo5'
+					src='/img/logos/borromeo__logo.png'
+					link='Case study'
+					to='borromeo5'
 				/>
 				<Item
 					subtitle='Oil company'
@@ -100,6 +104,6 @@ export default function Logos() {
 					src='/img/logos/castiglioni__logo.png'
 				/>
 			</Carousel>
-		</main>
+		</section>
 	);
 }
