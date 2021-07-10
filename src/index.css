@@ -40,7 +40,7 @@ body {
 
 @layer utilities {
 	.h-title {
-		height: calc(100vh - 30px);
+		height: calc(100vh - 38px);
 	}
 	.h-whole {
 		height: -webkit-fill-available;

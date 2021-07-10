@@ -1,5 +1,8 @@
 import React from 'react';
-import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
+import Carousel, {
+	autoplayPlugin,
+	arrowsPlugin,
+} from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import { NavLink } from 'react-router-dom';
 
@@ -37,19 +40,19 @@ export default function Logos() {
 						},
 					},
 
-					// {
-					// 	resolve: arrowsPlugin,
-					// 	options: {
-					// 		arrowLeft: (
-					// 			<button className='font-thin text-gray-400 h-slider'>←</button>
-					// 		),
-					// 		arrowRight: (
-					// 			<button className='font-thin text-gray-400 h-slider'>→</button>
-					// 		),
+					{
+						resolve: arrowsPlugin,
+						options: {
+							arrowLeft: (
+								<button className='font-thin text-gray-400 h-title'>←</button>
+							),
+							arrowRight: (
+								<button className='font-thin text-gray-400 h-title'>→</button>
+							),
 
-					// 		addArrowClickHandler: true,
-					// 	},
-					// },
+							addArrowClickHandler: true,
+						},
+					},
 				]}
 				animationSpeed={600}
 			>

@@ -2,11 +2,12 @@ import React, { useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/navbar';
-import { Homepage, Work, About } from './Pages';
+import { Homepage } from './Pages';
 import { Borromeo, Lima, Manin, Yape } from './cases';
 
 import Logos from './components/logos';
 import { __RouterContext } from 'react-router';
+import Info from './Pages/info';
 export function useRouter() {
 	return useContext(__RouterContext);
 }
@@ -27,13 +28,13 @@ function PageContent() {
 	return (
 		<Switch>
 			<Route path='/' exact component={Homepage} />
-			<Route path='/about' exact component={About} />
-			<Route path='/work' exact component={Work} />
-			<Route path='/work/logos' exact component={Logos} />
-			<Route path='/work/study/manin' component={Manin} />
-			<Route path='/work/study/yape' component={Yape} />
-			<Route path='/work/study/lima' component={Lima} />
-			<Route path='/work/study/borromeo5' component={Borromeo} />
+			<Route path='/info' exact component={Info} />
+
+			<Route path='/logos' exact component={Logos} />
+			<Route path='/manin' component={Manin} />
+			<Route path='/yape' component={Yape} />
+			<Route path='/lima' component={Lima} />
+			<Route path='/borromeo5' component={Borromeo} />
 		</Switch>
 	);
 }
